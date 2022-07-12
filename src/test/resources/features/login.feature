@@ -1,6 +1,5 @@
 Feature: Login Orange HRM
 
-  @SuccessLogin
   Scenario: Success Login Orange HRM
     Given Already on the website login
     When User input valid username

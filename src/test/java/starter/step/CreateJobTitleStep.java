@@ -8,12 +8,27 @@ public class CreateJobTitleStep {
 
     JobTitle jobTitle;
 
-    public void verifyDashboard(){
-        assertTrue(jobTitle.verifyDashboard());
+    public void clickAdminDashboard(){
+        jobTitle.clickAdminDashboard();
     }
 
-    public void clickMyInfo(){
-        jobTitle.clickMyInfo();
+    public void clickJobDashboard(){
+        jobTitle.clickJobDashboard();
     }
 
+    public void clickJobTitle(){
+        jobTitle.clickJobTitle();
+    }
+
+    public void clickBtnAdd(){
+        jobTitle.clickBtnAdd();
+    }
+
+    public void inputJobTitle(){
+        jobTitle.inputJobTitle();
+    }
+
+    public void clickBtnSave(){
+        jobTitle.clickBtnSave();
+    }
 }

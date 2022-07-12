@@ -8,14 +8,34 @@ import org.openqa.selenium.support.FindBy;
 @DefaultUrl("https://opensource-demo.orangehrmlive.com/index.php/auth/login")
 public class JobTitle extends PageObject {
 
-    @FindBy(id ="mainMenuFirstLevelUnorderedList")
-    WebElement dashboard;
+    @FindBy(id ="menu_admin_viewAdminModule")
+    WebElement adminDashboard;
 
-    @FindBy(id = "menu_pim_viewMyDetails")
-    WebElement myInfo;
+    @FindBy(id = "menu_admin_Job")
+    WebElement jobDashboard;
 
-    public Boolean verifyDashboard() {return dashboard.isDisplayed(); }
+    @FindBy(id = "menu_admin_viewJobTitleList")
+    WebElement jobTitle;
 
-    public void clickMyInfo() { myInfo.click(); }
+    @FindBy(id = "btnAdd")
+    WebElement btnAdd;
+
+    @FindBy(id = "jobTitle_jobTitle")
+    WebElement editTextJobTitle;
+
+    @FindBy(id = "btnSave")
+    WebElement btnSave;
+
+    public void clickAdminDashboard() { adminDashboard.click(); }
+
+    public void clickJobDashboard() { jobDashboard.click(); }
+
+    public void clickJobTitle() { jobTitle.click(); }
+
+    public void clickBtnAdd() { btnAdd.click(); }
+
+    public void inputJobTitle() { editTextJobTitle.sendKeys("try-this-job"); }
+
+    public void clickBtnSave() { btnSave.click(); }
 
 }

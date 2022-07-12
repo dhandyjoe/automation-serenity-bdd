@@ -8,5 +8,10 @@ Feature: Create Job Title
     Then User can landing on home page
 
   Scenario: Create job title
-    When User click dashboard admin
-    And Click MyInfo dashboard
+    When User click admin dashboard
+    And User click job dashboard
+    And User click Job Title
+    And User click Add Button
+    And User input Job title
+    And User click Save Button
+    Then Job title is displayed
